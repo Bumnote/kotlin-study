@@ -49,6 +49,10 @@ dependencies {
     // Logging
     implementation("io.github.oshai:kotlin-logging-jvm:7.0.3")
 
+    // Mock Library
+    testImplementation("io.mockk:mockk-jvm:1.14.11")
+    testImplementation("com.ninja-squad:springmockk:5.0.1")
+
     // Test
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
