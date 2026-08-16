@@ -10,7 +10,7 @@ import java.time.LocalDateTime
 
 @Entity
 class OrderTransaction(
-    val transactionId: Long,
+    val transactionId: String,
     @ManyToOne
     val order: Order,
     @Enumerated(EnumType.STRING)
@@ -18,7 +18,7 @@ class OrderTransaction(
     @Enumerated(EnumType.STRING)
     val transactionStatus: TransactionStatus, // 생성, 성공, 실패
     val transactionAmount: Long,
-    val merchantTransactionId: Long,
+    val merchantTransactionId: String,
     var payMethodTransactionId: String? = null,
     var transactedAt: LocalDateTime? = null,
     var failureCode: String? = null,
